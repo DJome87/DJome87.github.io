@@ -6009,27 +6009,27 @@ html.w-mod-js *[data-ix="thumbnail"] {
   font-display: auto;
 }
 
-.side-by-side-container {
+.image-container {
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px; /* Space between the columns */
+  margin-top: 20px;
 }
 
 .image-column {
-  width: 50%;
+  flex: 1; /* Each column takes equal width */
+  min-width: 0; /* Ensures columns can shrink if needed */
 }
 
-.image-column img {
-  width: 100%;
+.image-17 {
+  width: 100%; /* Make images fill their containers */
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .side-by-side-container {
-    flex-direction: column;
-  }
-  
-  .image-column {
-    width: 100%;
-    margin-bottom: 20px;
+/* Responsive behavior - stack columns on mobile */
+@media (max-width: 767px) {
+  .image-container {
+      flex-direction: column;
   }
 }
