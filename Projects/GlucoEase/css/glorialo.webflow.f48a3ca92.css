@@ -6008,3 +6008,28 @@ html.w-mod-js *[data-ix="thumbnail"] {
   font-style: italic;
   font-display: auto;
 }
+
+.side-by-side-container {
+  display: flex;
+  gap: 20px;
+}
+
+.image-column {
+  width: 50%;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .side-by-side-container {
+    flex-direction: column;
+  }
+  
+  .image-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
