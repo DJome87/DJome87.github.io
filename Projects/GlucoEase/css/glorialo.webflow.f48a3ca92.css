@@ -6037,3 +6037,30 @@ html.w-mod-js *[data-ix="thumbnail"] {
 .text-block-21.new-section {
   margin-top: 30px; /* Specific spacing for new content sections */
 }
+
+.gif-content {
+  width: 100%;
+  max-width: 1280px; /* Original width of your GIF */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the GIF if it's smaller than its container */
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1280px; /* Adjust to your preferred maximum width */
+    margin: 0 auto;
+    /* Optional: add a background or border */
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.prototype-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Remove this if you want the default video controls styling */
+    border: none;
+    outline: none;
+}
