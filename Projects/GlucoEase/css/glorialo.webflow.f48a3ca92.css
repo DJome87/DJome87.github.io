@@ -6033,3 +6033,7 @@ html.w-mod-js *[data-ix="thumbnail"] {
       flex-direction: column;
   }
 }
+
+.text-block-21.new-section {
+  margin-top: 30px; /* Specific spacing for new content sections */
+}
