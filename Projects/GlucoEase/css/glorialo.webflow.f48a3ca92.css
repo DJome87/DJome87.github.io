@@ -6070,3 +6070,46 @@ html.w-mod-js *[data-ix="thumbnail"] {
     border: none;
     outline: none;
 }
+.image-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px; /* Space between image containers */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.div-block-56 {
+  flex: 1; /* Each image container takes equal width */
+  min-width: 0; /* Allows images to shrink below their natural size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Make images stack on mobile for better visibility */
+@media (max-width: 767px) {
+  .image-row-container {
+      flex-direction: column;
+      gap: 32px; /* More space between stacked items */
+  }
+  
+  .image-title {
+      margin-bottom: 8px;
+      font-size: 18px; /* Slightly larger on mobile */
+  }
+}
