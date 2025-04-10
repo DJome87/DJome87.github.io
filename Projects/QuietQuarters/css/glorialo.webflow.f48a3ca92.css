@@ -6140,6 +6140,12 @@ html.w-mod-js *[data-ix="thumbnail"] {
   width: 100%;
   border-radius: 6px;
   height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add this */
+  transition: box-shadow 0.3s ease; /* Optional: smooth hover effect */
+}
+
+.grid-image:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Optional: deeper shadow on hover */
 }
 
 /* For tablets */
