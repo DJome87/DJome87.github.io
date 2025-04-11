@@ -899,6 +899,29 @@ figcaption {
   grid-template-rows: auto;
 }
 
+.about-container {
+  overflow: auto; /* Ensures the container includes floating elements */
+}
+
+.profile-image-float {
+  float: right; /* Makes the image float to the right with text wrapping around left side */
+  max-width: 40%; /* Controls image width */
+  margin: 0 0 15px 20px; /* Top, Right, Bottom, Left margins */
+  border-radius: 5px; /* Optional: rounded corners */
+  max-height: 500px;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .profile-image-float {
+      float: none;
+      display: block;
+      max-width: 100%;
+      margin: 0 auto 20px;
+  }
+}
+
 .hi-there-heading {
   margin-top: 10px;
   margin-bottom: 10px;
